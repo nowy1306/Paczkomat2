@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href='/static/main.css' />
+		<script src="/static/dashboard.js" defer></script>
+	</head>
+	<body>
+		<header>
+			Deliverman - Patryk Nowacki	
+		</header>
+		<nav>
+			<ul>
+			<li><a href="/">Strona główna</a></li>
+			{% if is_logged is not true %}
+				<li><a href="/sender/register">Zarejestruj</a></li>
+				<li><a href="/sender/login">Zaloguj</a></li>
+			{% endif %}
+			{% if is_logged is true %}
+				<li><a href="/sender/dashboard">Twoje przesylki</a></li>
+				<li><a href="/sender/logout">Wyloguj</a></li>
+			{% endif %}
+			</ul>
+		</nav>
+		<ul>
+			<table id="tab" style="width:100%">
+			<tr>
+				<th>Identyfikator</th>
+				<th>Adres odbiorcy</th>
+				<th>Identyfikator skrytki</th>
+				<th>Romiar paczki</th>
+			</tr>
+			{% for key in labels %}
+			<tr>
+				<td>{{key}}</td>
+				{% for element in labels[key] %}
+					<td>{{element}}</td>
+				{% endfor %}
+				<td><button/>Usun</td>
+			</tr>
+			{% endfor %}
+			</table>
+			<button id="addButton">Dodaj</button>
+		</ul>
+		<footer>
+			<ul>
+				<li><a>2020</a></li>
+				<li><a href=https://github.com/nowy1306/Paczkomat2/>https://github.com/nowy1306/Paczkomat/</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

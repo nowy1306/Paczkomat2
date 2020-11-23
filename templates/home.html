@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href='/static/main.css' />
+	</head>
+	<body>
+		<header>
+			Deliverman - Patryk Nowacki	
+		</header>
+		<nav>
+			<ul>
+			<li><a href="/">Strona główna</a></li>
+			{% if is_logged is not true %}
+				<li><a href="/sender/register">Zarejestruj</a></li>
+				<li><a href="/sender/login">Zaloguj</a></li>
+			{% endif %}
+			{% if is_logged is true %}
+				<li><a href="/sender/dashboard">Twoje przesylki</a></li>
+				<li><a href="/sender/logout">Wyloguj</a></li>
+			{% endif %}
+			</ul>
+		</nav>
+			<p>
+				Witaj! Jestem Deliverman. Jestem do Twoich usług. Byc może w obecnym stanie nie pozwolę Ci wysłać paczki, ale jak narazie spróbuj się zarejestrować.
+			</p>
+			<p>
+				Po rejestracji wróć niebawem! Cały czas moja funkcjonalność się rozwija. 
+			</p>
+		<footer>
+			<ul>
+				<li><a>2020</a></li>
+				<li><a href=https://github.com/nowy1306/Paczkomat2/>https://github.com/nowy1306/Paczkomat/</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

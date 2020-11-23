@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href='/static/main.css' />
+	</head>
+	<body>
+		<header>
+			Deliverman - Patryk Nowacki	
+		</header>
+		<nav>
+			<ul>
+			<li><a href="/">Strona główna</a></li>
+			{% if is_logged is not true %}
+				<li><a href="/sender/register">Zarejestruj</a></li>
+				<li><a href="/sender/login">Zaloguj</a></li>
+			{% endif %}
+			{% if is_logged is true %}
+				<li><a href="/sender/dashboard">Twoje przesylki</a></li>
+				<li><a href="/sender/logout">Wyloguj</a></li>
+			{% endif %}
+			</ul>
+		</nav>
+		<form id="form" method="POST" action="/sender/register" enctype="multipart/form-data">
+			<ul id="form_list">
+				<li>
+					<input type="text" id="fname" name="firstname" placeholder="Imie">
+				</li>
+				<li>
+					<input type="text" id="lname" name="lastname" placeholder="Nazwisko">
+				</li>
+				<li>
+					<input type="text" id="address" name="address" placeholder="Adres">
+				</li>
+				<li>
+					<input type="text" id="email" name="email" placeholder="Email">
+				</li>
+				<li>
+					<input type="text" id="login" name="login" placeholder="Nazwa uzytkownika">
+				</li>
+				<li>
+					<input type="password" id="pass" name="password" placeholder="Haslo">
+				</li>
+				<li>
+					<input type="password" id="pass2" name="password2" placeholder="Powtorne haslo">
+				</li>
+				<li>
+					<input type="submit" id="submit" name="submit">
+				</li>
+			</ul>
+		</form>
+		<footer>
+			<ul>
+				<li><a>2020</a></li>
+				<li><a href=https://github.com/nowy1306/Paczkomat2/>https://github.com/nowy1306/Paczkomat/</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>

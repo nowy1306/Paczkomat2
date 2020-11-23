@@ -1,0 +1,116 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #A8A8A8;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 0px;
+  font-family: Overpass;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+nav li {
+  float: left;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: Overpass;
+  
+}
+
+body header {
+	font-family: Overpass;
+}
+
+
+footer li a{
+  float: left;
+  padding-right: 5px;
+}
+
+nav li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+
+nav li a:hover {
+  background-color: #929292;
+}
+
+body {
+	background-color: #FFF6F6;
+}
+
+form ul {
+  list-style-type: none;
+}
+
+form li {
+	padding: 10px;
+}
+
+
+form input {
+	background: #FFFFFF;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+form input[type=submit] {
+	background: #D8D0C5;
+}
+
+
+.invalid_info {
+	color: red;
+	padding-left: 10px;
+}
+
+.invalid_form {
+	background-color: #FF7A7A;
+	color: black;
+}
+
+.valid_form {
+	background-color: #B2FFB2;
+	color: black;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+ul td button {
+	width: 80px;
+	height: 20px;
+	background: #FF8383;
+	border-radius: 10px;
+}
+
+ul button {
+	width: 80px;
+	height: 20px;
+	background: #D8D0C5;
+	border-radius: 10px;
+}
+
+
+
+
