@@ -1,1 +1,8 @@
-.env
+/courier/.vs/
+/sender/__pycache__/
+/sender/.env
+/sender/docker-compose.yml
+/sender/Dockerfile
+/sender/start.bat
+/web-service/__pycache__/
+/web-service/.env

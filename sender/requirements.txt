@@ -1,0 +1,9 @@
+Flask==1.1.2
+bcrypt
+redis
+python-dotenv
+pyjwt
+Flask-Cors
+Flask-HAL
+requests
+gunicorn
