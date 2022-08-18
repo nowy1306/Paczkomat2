@@ -1,5 +1,5 @@
 Paczkomat2 - bardzo prosta aplikacja symulująca proces nadawania paczki i dostarczania jej.
 Składa się z 3 modułów:
 1. Aplikacja dla nadawcy - nadawca podaje dane paczki i rejestruje ją w systemie. Wykonana w języku Python z wykorzystaniem Flask. Oparta o SSR.
-2. Aplikacja dla kuriera - kurier posiada informacje o nadanych paczkach, może zmienić status przesyłki. Jest to aplikacja typu SPA.
+2. Aplikacja dla kuriera - kurier posiada informacje o nadanych paczkach, może zmienić status przesyłki. Jest to aplikacja typu SPA wykonana w React.
 3. Serwer - usługa sieciowa REST, pośrednik w komunikacji mięzy nadawcą i kurierem, przechowuje dane. Wykonany w języku Python z wykorzystaniem Flask.
